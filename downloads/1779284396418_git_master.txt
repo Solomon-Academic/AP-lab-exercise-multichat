@@ -1,0 +1,8 @@
+git clone https://github.com/user/repo.git; git init; git status; git add .
+git commit -m "feat: add backend authentication logic"; git commit --amend
+git checkout -b feature/login; git branch -a; git merge main; git pull origin
+git remote -v; git remote add origin url; git push -u origin main --force
+git log --oneline --graph --all; git diff HEAD^ HEAD; git show --stat
+git stash push -m "work in progress"; git stash pop; git stash list
+git reset --soft HEAD~1; git restore file.py; git revert <commit_id>
+git tag -a v1.0 -m "release v1.0"; git fetch --all --prune; git config --list

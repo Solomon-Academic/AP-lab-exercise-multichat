@@ -1,0 +1,47 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.bak
+release.properties
+.flattened-pom.xml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.iml
+*.iws
+*.ipr
+
+# Build outputs
+out/
+build/
+dist/
+*.class
+*.jar
+*.war
+*.ear
+
+# Compiled files
+*.o
+*.so
+*.dll
+*.exe
+
+# Test coverage
+target/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,3 +1,5 @@
+package com.multichat.client;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -23,12 +25,12 @@ public class ChatClient extends JFrame {
     private static final String SERVER_ADDRESS = "localhost";
     private static final int SERVER_PORT = 1234;
     private static final int MAX_FILE_SIZE = 100 * 1024 * 1024;
-    
+
     public ChatClient() {
         initializeGUI();
         connectToServer();
     }
-    
+
     private void initializeGUI() {
         setTitle("Chat Application");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -87,7 +89,7 @@ public class ChatClient extends JFrame {
         setVisible(true);
         messageField.requestFocusInWindow();
     }
-    
+
     private void connectToServer() {
         try {
             socket = new Socket(SERVER_ADDRESS, SERVER_PORT);
@@ -111,7 +113,7 @@ public class ChatClient extends JFrame {
             disableInput();
         }
     }
-    
+
     private void sendMessage() {
         String message = messageField.getText().trim();
 
@@ -186,7 +188,7 @@ public class ChatClient extends JFrame {
             fileButton.setEnabled(true);
         }
     }
-    
+
     private void disconnectFromServer() {
         try {
             appendToChat("Disconnecting...");
@@ -224,7 +226,7 @@ public class ChatClient extends JFrame {
         sendButton.setEnabled(false);
         fileButton.setEnabled(false);
     }
-    
+
     private class MessageReceiver implements Runnable {
         @Override
         public void run() {

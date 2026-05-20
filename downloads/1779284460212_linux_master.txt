@@ -1,0 +1,10 @@
+ls -lah /var/log; cd ../../etc/default; pwd; mkdir -p projects/python/app
+cp -rv src/ backup/; mv old.txt new.conf; rm -rf /tmp/test_dir; touch .env
+sudo chown -R $USER:$USER /var/www; chmod 755 script.sh; chmod +x tool.py
+grep -ri "error" /var/log/syslog | tail -n 20; awk -F: '{print $1}' /etc/passwd
+ps aux | grep "python"; kill -9 1234; htop; df -h; du -sh ./*; free -m
+curl -I https://google.com; wget -O- https://get.docker.com | sh; ip addr show
+find . -type f -name "*.py" -mtime -7; locate nginx.conf; which python3
+tar -czvf archive.tar.gz folder/; tar -xzvf backup.tar.gz -C /opt/
+cat /proc/cpuinfo; lscpu; lsblk; uname -a; dmesg | grep -i "usb"
+ssh-keygen -t ed25519 -C "email"; ssh user@192.168.1.10 -p 22
